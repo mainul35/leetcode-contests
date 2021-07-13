@@ -1,4 +1,4 @@
-package july.leetcode.challange_2021;
+package july.leetcode.challange_2021.weekly_248;
 
 public class CountGoodNumbers {
     public static void main(String[] args) {
