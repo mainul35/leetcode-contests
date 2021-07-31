@@ -1,4 +1,4 @@
-package july.leetcode.micellinions;
+package micellinions;
 
 import org.jnativehook.GlobalScreen;
 import org.jnativehook.NativeHookException;

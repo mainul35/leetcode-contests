@@ -1,4 +1,4 @@
-package july.leetcode.freesolve.hackerrank;
+package freesolve.hackerrank;
 
 public class LiftingWeights {
     public static void main(String[] args) {

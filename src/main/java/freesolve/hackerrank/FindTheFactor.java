@@ -1,4 +1,4 @@
-package july.leetcode.freesolve.hackerrank;
+package freesolve.hackerrank;
 
 import java.util.ArrayList;
 import java.util.List;

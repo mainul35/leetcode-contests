@@ -1,8 +1,7 @@
-package july.leetcode.freesolve;
+package freesolve.leetcode;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.stream.Collectors;
 
@@ -58,7 +57,7 @@ public class TwoSum {
                 return new int[] {left, right};
             } else if (currentSum < target) {
                 left += 1;
-            } else if (currentSum > target) {
+            } else {
                 right -= 1;
             }
         }
