@@ -1,4 +1,4 @@
-package july.leetcode.challange_2021.weekly_249;
+package leetcode.challange_2021.weekly_249;
 
 import java.util.Arrays;
 

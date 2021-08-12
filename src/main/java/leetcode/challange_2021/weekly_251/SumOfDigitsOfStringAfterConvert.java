@@ -1,4 +1,4 @@
-package july.leetcode.challange_2021.weekly_251;
+package leetcode.challange_2021.weekly_251;
 
 public class SumOfDigitsOfStringAfterConvert {
 
