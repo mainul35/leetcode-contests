@@ -1,16 +1,14 @@
 package codility.time_complexity;
 
-import java.util.Arrays;
-
 public class TapeEquilibrium {
 
     public static void main(String[] args) {
         int[] A = new int[]{1, 2, 3, 4, 2};
-        System.out.println (solution (A));
+        System.out.println (solution2 (A));
     }
 
     // O(N*N) complexity
-    public static int solution(int[] A) {
+    public static int solution1(int[] A) {
 
         if (A.length == 0) return 0;
         if (A.length == 1) return A[0];
@@ -45,4 +43,22 @@ public class TapeEquilibrium {
         return min;
     }
 
+    // O(N) complexity
+    public static int solution2(int[] A) {
+        int total = 0;
+
+        for (int j : A) total += j;
+
+        int diff = Integer.MAX_VALUE;
+        int prev = 0;
+        int next = total;
+
+        for (int p = 1; p < A.length; p++) {
+            prev += A[p - 1];
+            next = total - prev;
+            diff = Math.min(diff, Math.abs(prev - next));
+        }
+
+        return diff;
+    }
 }
