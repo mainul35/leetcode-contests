@@ -64,12 +64,13 @@ public class ScreenBrightnessManager implements NativeKeyListener {
 
     @Override
     public void nativeKeyPressed(NativeKeyEvent evt) {
-        System.out.println(evt.getKeyCode());
-        System.out.println(NativeKeyEvent.getKeyText(evt.getKeyCode()));
+//        evt.getSource()
+//        System.out.println(evt.getKeyCode());
+//        System.out.println(NativeKeyEvent.getKeyText(evt.getKeyCode()));
 
-        /*if (nativeKeyEvent.getKeyCode() == NativeKeyEvent.VC_F9) {
+        if (evt.getKeyCode() == NativeKeyEvent.VC_PAGE_DOWN) {
             if (BRIGHTNESS_LEVEL > 0) {
-                BRIGHTNESS_LEVEL -= 10;
+                BRIGHTNESS_LEVEL -= 5;
                 try {
                     setBrightness(BRIGHTNESS_LEVEL);
                 } catch (IOException e) {
@@ -78,16 +79,16 @@ public class ScreenBrightnessManager implements NativeKeyListener {
             }
         }
 
-        if (nativeKeyEvent.getKeyCode() == NativeKeyEvent.VC_F10) {
+        if (evt.getKeyCode() == NativeKeyEvent.VC_PAGE_UP) {
             if (BRIGHTNESS_LEVEL < 100) {
-                BRIGHTNESS_LEVEL += 10;
+                BRIGHTNESS_LEVEL += 5;
                 try {
                     setBrightness(BRIGHTNESS_LEVEL);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-        }*/
+        }
     }
 
     @Override
