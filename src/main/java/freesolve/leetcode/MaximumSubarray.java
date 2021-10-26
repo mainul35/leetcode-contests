@@ -9,12 +9,11 @@ public class MaximumSubarray {
     }
 
     /**
-     * p1 = 0;
      * currentSum = nums[0]; maxSum = Integer.MIN_VALUE
      * i starts to move
-     * currentSum = sum(p1...i)
-     * if currentSum > maxSum then maxSum = currentSum
-     * else p1 = i, currentSum = nums[i]
+     * currentSum = sum(nums[i])
+     * if currentSum >= maxSum then maxSum = currentSum
+     * else currentSum = 0
      * repeat
      * */
     public static int maxSubArray(int[] nums) {
